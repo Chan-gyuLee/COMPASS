@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+build/
+dist/
+outputs/
+.cache/
+*.npy
+*.npz
+*.xtc
+*.ckpt
+examples/inputs/
