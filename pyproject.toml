@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "compass-steering"
+version = "0.1.0"
+description = "Target-directed conditioning-embedding optimization for BioEmu"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "Changyu Lee"}, {name = "Sunghee Choi"}, {name = "Gyu Rie Lee"}]
+dependencies = ["torch>=2.5", "numpy>=1.26", "biopython>=1.84", "torch-geometric>=2.6.1"]
+
+[project.optional-dependencies]
+bioemu = ["bioemu==1.3.1"]
+
+[project.scripts]
+compass-sample = "compass.cli:main"
+
+[project.urls]
+Repository = "https://github.com/Chan-gyuLee/COMPASS"
+
+[tool.setuptools]
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+
+[tool.setuptools.packages.find]
+include = ["compass*"]

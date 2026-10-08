@@ -1,0 +1,14 @@
+{
+  "anchor_time": 0.5,
+  "anchor_steps": 25,
+  "sampling_steps": 50,
+  "optimization_steps": 100,
+  "learning_rate": 0.015,
+  "weight_ca": 1.0,
+  "weight_cb": 2.0,
+  "weight_orientation": 1.0,
+  "weight_regularization": 1.0,
+  "delta_clamp": 0.5,
+  "gradient_clip": 1.0,
+  "orientation_mode": "relative"
+}
